@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({ //NgModule: decorator function
   declarations: [ //declarations: This property is an array of the components, directives, and pipes that belong to this module.
@@ -15,7 +16,8 @@ import { ServicesComponent } from './services/services.component';
   ],
   imports: [ //his property is an array of other modules whose exported classes are needed by component templates declared in this module.
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [], //This property is an array of dependency injection providers for services that the module contributes to the global collection of services.
   bootstrap: [AppComponent]

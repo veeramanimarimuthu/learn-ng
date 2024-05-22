@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   title = "Hello";
   message = "I'm leaning Ng";
-  display = false;
+  display = true;
+
+  inputValue: string = '';
 
   onclick(){
-    this.display = true;
+    this.display = false;
   }
 }
