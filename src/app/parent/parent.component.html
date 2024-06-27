@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12" *ngFor="let course of parentCourses; trackBy: trackByCourseId">
+            <app-child [childCourse]="course" (customEvent)="onClickParent($event)"/>
+        </div>
+    </div>
+</div>

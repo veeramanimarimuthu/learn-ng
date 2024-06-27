@@ -10,6 +10,8 @@ export class HomeComponent {
   message = "I'm leaning Ng";
   display = true;
 
+  parentMessage: string = "Hello from Parent!"
+
   inputValue: string = '';
 
   onclick(){

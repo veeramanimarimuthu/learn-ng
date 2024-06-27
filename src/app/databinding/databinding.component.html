@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h1>Data Binginig</h1>
+            <ol>
+                <li>Interpolation</li>
+                <li>Property Binding</li>
+                <li>Event Binding</li>
+                <li>Two-Way Data Binding</li>
+            </ol>
+            <img src="../../assets/images/databinding.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h2>Interpolation</h2>
+            <p>Interpolation is used to directly access the properties present in a component into the HTML template.</p>
+            <h5>{{ interpolationMessage }}</h5>
+            <h5>{{ 2+2 }}</h5>
+            <h5>{{ interpolationMessage+4+2}}</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h2>Property Binding</h2>
+            <p>Property Binding is a single way data binding in which you can bind your class level properties to the components view.
+                The syntax for property binding is: [attribute-name] = 'property-name'  OR [ngModel] = 'property-name'
+            </p>
+            <input class="form-control" type="text" [value]="propertyTitle"> <br>
+
+            <input class="form-control" type="text" [ngModel]="propertyTitle">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h2>Event Binding</h2>
+            <p>Event Binding provides you with a way to capture various types of events and execute some functionality if such events occur.
+                The syntax for event binding is: (eventNameToBeCaptured) = "someFunction()" or (ngModelChange) = "someFunction()"</p>
+            <button (click)="onClick()" class="btn btn-primary">Click</button>
+           <p class="text-bold fs-3"> {{ eventClickMessage }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h2>Two-Way Data Binding</h2>
+            <p>Two way data binding can bind class level property with component view and any change from either end will be reflected on both the sides instantly.
+                The syntax for two-way data binding is: [(attribute-name)] ='properties-name'</p>
+        </div>
+        <input class="form-control" type="text" name="" id="" [(ngModel)]="twoWayBindTitle">
+        <p class="fs-4">{{ twoWayBindTitle }}</p>
+    </div>
+    <p>Documentation Link: <a href="https://www.linkedin.com/pulse/introduction-data-binding-nagma-bano" target="_blank" ></a>Click Here</p>
+</div>

@@ -1,0 +1,14 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ childCourse.description }}</h5>
+                    <img [src]="childCourse.iconUrl" alt={{childCourse.description}} class="img-fluid rounded-2">
+                    <p class="card-text">{{ childCourse.longDescription }}</p>
+                    <button (click)="onClickChild()" class="btn btn-info d-block mx-auto text-white">View Course</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

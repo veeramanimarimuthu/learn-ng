@@ -9,10 +9,13 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 @NgModule({ //NgModule: decorator function
   declarations: [ //declarations: This property is an array of the components, directives, and pipes that belong to this module.
-    AppComponent, HomeComponent, AboutComponent, BlogComponent, ContactComponent, ServicesComponent // Component is nothing but div
+    AppComponent, HomeComponent, AboutComponent, BlogComponent, ContactComponent, ServicesComponent, ChildComponent, ParentComponent, DatabindingComponent // Component is nothing but div
   ],
   imports: [ //his property is an array of other modules whose exported classes are needed by component templates declared in this module.
     BrowserModule,
