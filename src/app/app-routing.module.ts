@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
   { path:'', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path:'child', component: ChildComponent },
   { path:'parent', component: ParentComponent },
   { path:'databinding', component: DatabindingComponent },
+  { path:'reactive-form', component: ReactiveFormComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
